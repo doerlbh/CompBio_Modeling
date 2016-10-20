@@ -30,7 +30,8 @@ deltac=centerlist(2)-centerlist(1);
 figure
 bar(centerlist,nlist/(M*deltac));
 
-%% within delta
+%% within range
 
-Pw = Pwithin(0.5, 0.6)
+Pw = Pwithin(0.5, 0.6, deltac, sample_list);
+
 
