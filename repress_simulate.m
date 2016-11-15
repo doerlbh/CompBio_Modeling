@@ -2,15 +2,13 @@
 
 close all
 
-alpha=15;
+alpha=150;
 
 alpha0=0.5;
-beta=0.2;
+beta=10.2;
 n=2;
 
-
-
-for numreps=1:1 
+for numreps=1:20
 
 p = [alpha,alpha0,beta,n];
 x0 = 30*rand(6,1) ;
@@ -21,11 +19,10 @@ Tmax=2500;
 
 figure(1)
 set(gca,'FontSize',16)
-plot(T,Y(:,1:3),'LineWidth',3) ; hold on;
-plot(T,Y(:,4:6),:,'LineWidth',3) ; hold on;
+plot(T,Y(:,1:3),'LineWidth',3) ; hold on
+plot(T,Y(:,4:6),'LineWidth',3) ; hold on;
 legend('m lalcl','m tetR','m cl','p lacl','p tetR','p cl')
 xlabel('t') ; 
-
 
 figure(2)
 set(gca,'FontSize',16)
